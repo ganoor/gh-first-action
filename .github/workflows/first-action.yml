@@ -5,6 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Greetings
-        run: echo "Hello World!"
-      - name: Print Good Bye
-        run: echo "Done - Good Bye"
+        run: |
+          echo "Hello World!"
+          echo "Testing the mulitple Lines"
+          echo "ipcs -a"
+      - name: Ending Greetings
+        run : |
+          echo "Saying Good bye"
+          echo "Will connect again"
